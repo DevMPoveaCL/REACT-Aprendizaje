@@ -1,6 +1,7 @@
+//importamos react solo si lo ocuparemos dentro de este archivo ".js"
 import React from "react";
 
-
+//componente asociado a la tabla de usuario y sus propiedades.
 const TableUser = ({ usuarios, deleteUser, setUsuarioEditado }) => {
     return (
         <div class="card container mb-2">
@@ -46,15 +47,6 @@ const TableUser = ({ usuarios, deleteUser, setUsuarioEditado }) => {
                             <td>
                                 <button
                                     type="button"
-                                    class="btn btn-danger"
-                                    onClick={() => {
-                                        deleteUser(usuario.rut);
-                                    }}
-                                >
-                                    Eliminar
-                                </button>
-                                <button
-                                    type="button"
                                     class="btn btn-warning"
                                     onClick={() => {
                                         setUsuarioEditado(usuario);
@@ -62,6 +54,16 @@ const TableUser = ({ usuarios, deleteUser, setUsuarioEditado }) => {
                                 >
                                     Editar
                                 </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-danger"
+                                    onClick={() => {
+                                        deleteUser(usuario.rut);
+                                    }}
+                                >
+                                    Eliminar
+                                </button>
+
 
                             </td>
                         </tr>

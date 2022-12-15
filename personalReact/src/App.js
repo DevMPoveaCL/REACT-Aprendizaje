@@ -1,5 +1,8 @@
+//importamos react solo si lo ocuparemos dentro de este archivo ".js"
 import React from "react";
+//Rutas de acceso a nuestras páginas a través del navegador web.
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//Importa las páginas existentes.
 import { AutoPage, HomePage } from "./pages";
 
 const App = () => {
